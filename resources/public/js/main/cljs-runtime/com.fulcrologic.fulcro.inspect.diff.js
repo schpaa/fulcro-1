@@ -1,9 +1,9 @@
 goog.provide('com.fulcrologic.fulcro.inspect.diff');
 com.fulcrologic.fulcro.inspect.diff.updates = (function com$fulcrologic$fulcro$inspect$diff$updates(a,b){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (adds,p__49772){
-var vec__49773 = p__49772;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49773,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49773,(1),null);
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (adds,p__48050){
+var vec__48052 = p__48050;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48052,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48052,(1),null);
 var va = cljs.core.get.cljs$core$IFn$_invoke$arity$3(a,k,new cljs.core.Keyword("fulcro.inspect.lib.diff","unset","fulcro.inspect.lib.diff/unset",-1153887743));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(v,va)){
 return adds;
@@ -17,15 +17,15 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(adds,k,v);
 }),cljs.core.PersistentArrayMap.EMPTY,b);
 });
 com.fulcrologic.fulcro.inspect.diff.removals = (function com$fulcrologic$fulcro$inspect$diff$removals(a,b){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (rems,p__49780){
-var vec__49781 = p__49780;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49781,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49781,(1),null);
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (rems,p__48061){
+var vec__48062 = p__48061;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48062,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48062,(1),null);
 var temp__5733__auto__ = cljs.core.find(b,k);
 if(cljs.core.truth_(temp__5733__auto__)){
-var vec__49784 = temp__5733__auto__;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49784,(0),null);
-var vb = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49784,(1),null);
+var vec__48071 = temp__5733__auto__;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48071,(0),null);
+var vb = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48071,(1),null);
 if(((cljs.core.map_QMARK_(v)) && (cljs.core.map_QMARK_(vb)) && (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(v,vb)))){
 var childs = (com.fulcrologic.fulcro.inspect.diff.removals.cljs$core$IFn$_invoke$arity$2 ? com.fulcrologic.fulcro.inspect.diff.removals.cljs$core$IFn$_invoke$arity$2(v,vb) : com.fulcrologic.fulcro.inspect.diff.removals.call(null,v,vb));
 if(cljs.core.seq(childs)){
@@ -37,11 +37,11 @@ return rems;
 return rems;
 }
 } else {
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(rems,(function (){var G__49790 = k;
+return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(rems,(function (){var G__48075 = k;
 if(cljs.core.map_QMARK_(k)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__49790,new cljs.core.Keyword("fulcro.inspect.lib.diff","key?","fulcro.inspect.lib.diff/key?",325118813),true);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__48075,new cljs.core.Keyword("fulcro.inspect.lib.diff","key?","fulcro.inspect.lib.diff/key?",325118813),true);
 } else {
-return G__49790;
+return G__48075;
 }
 })());
 }
@@ -57,28 +57,28 @@ return cljs.core.merge_with.cljs$core$IFn$_invoke$arity$variadic(com.fulcrologic
 return y;
 }
 });
-com.fulcrologic.fulcro.inspect.diff.patch_updates = (function com$fulcrologic$fulcro$inspect$diff$patch_updates(x,p__49797){
-var map__49798 = p__49797;
-var map__49798__$1 = (((((!((map__49798 == null))))?(((((map__49798.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__49798.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__49798):map__49798);
-var updates = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__49798__$1,new cljs.core.Keyword("fulcro.inspect.lib.diff","updates","fulcro.inspect.lib.diff/updates",221795125));
+com.fulcrologic.fulcro.inspect.diff.patch_updates = (function com$fulcrologic$fulcro$inspect$diff$patch_updates(x,p__48078){
+var map__48080 = p__48078;
+var map__48080__$1 = (((((!((map__48080 == null))))?(((((map__48080.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__48080.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__48080):map__48080);
+var updates = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48080__$1,new cljs.core.Keyword("fulcro.inspect.lib.diff","updates","fulcro.inspect.lib.diff/updates",221795125));
 return cljs.core.merge_with.cljs$core$IFn$_invoke$arity$variadic(com.fulcrologic.fulcro.inspect.diff.deep_merge,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([x,updates], 0));
 });
-com.fulcrologic.fulcro.inspect.diff.patch_removals = (function com$fulcrologic$fulcro$inspect$diff$patch_removals(x,p__49810){
-var map__49811 = p__49810;
-var map__49811__$1 = (((((!((map__49811 == null))))?(((((map__49811.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__49811.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__49811):map__49811);
-var removals = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__49811__$1,new cljs.core.Keyword("fulcro.inspect.lib.diff","removals","fulcro.inspect.lib.diff/removals",-1638817439));
+com.fulcrologic.fulcro.inspect.diff.patch_removals = (function com$fulcrologic$fulcro$inspect$diff$patch_removals(x,p__48087){
+var map__48088 = p__48087;
+var map__48088__$1 = (((((!((map__48088 == null))))?(((((map__48088.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__48088.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__48088):map__48088);
+var removals = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48088__$1,new cljs.core.Keyword("fulcro.inspect.lib.diff","removals","fulcro.inspect.lib.diff/removals",-1638817439));
 return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (final$,rem){
 if(cljs.core.truth_(new cljs.core.Keyword("fulcro.inspect.lib.diff","key?","fulcro.inspect.lib.diff/key?",325118813).cljs$core$IFn$_invoke$arity$1(rem))){
 return cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(final$,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(rem,new cljs.core.Keyword("fulcro.inspect.lib.diff","key?","fulcro.inspect.lib.diff/key?",325118813)));
 } else {
 if(cljs.core.map_QMARK_(rem)){
-var vec__49816 = cljs.core.first(rem);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49816,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49816,(1),null);
-return cljs.core.update.cljs$core$IFn$_invoke$arity$3(final$,k,(function (p1__49804_SHARP_){
-var G__49819 = p1__49804_SHARP_;
-var G__49820 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("fulcro.inspect.lib.diff","removals","fulcro.inspect.lib.diff/removals",-1638817439),v], null);
-return (com.fulcrologic.fulcro.inspect.diff.patch_removals.cljs$core$IFn$_invoke$arity$2 ? com.fulcrologic.fulcro.inspect.diff.patch_removals.cljs$core$IFn$_invoke$arity$2(G__49819,G__49820) : com.fulcrologic.fulcro.inspect.diff.patch_removals.call(null,G__49819,G__49820));
+var vec__48092 = cljs.core.first(rem);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48092,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48092,(1),null);
+return cljs.core.update.cljs$core$IFn$_invoke$arity$3(final$,k,(function (p1__48082_SHARP_){
+var G__48095 = p1__48082_SHARP_;
+var G__48096 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("fulcro.inspect.lib.diff","removals","fulcro.inspect.lib.diff/removals",-1638817439),v], null);
+return (com.fulcrologic.fulcro.inspect.diff.patch_removals.cljs$core$IFn$_invoke$arity$2 ? com.fulcrologic.fulcro.inspect.diff.patch_removals.cljs$core$IFn$_invoke$arity$2(G__48095,G__48096) : com.fulcrologic.fulcro.inspect.diff.patch_removals.call(null,G__48095,G__48096));
 }));
 } else {
 return cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(final$,rem);

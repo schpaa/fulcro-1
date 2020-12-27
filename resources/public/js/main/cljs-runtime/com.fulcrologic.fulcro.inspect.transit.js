@@ -58,11 +58,11 @@ return "unknown";
 var self__ = this;
 var this$ = this;
 try{return cljs.core.str.cljs$core$IFn$_invoke$arity$1(v);
-}catch (e51882){var e = e51882;
+}catch (e53291){var e = e53291;
 if(cljs.core.truth_(goog.DEBUG)){
 taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$10(taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"warn","warn",-436710552),"com.fulcrologic.fulcro.inspect.transit",null,20,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Transit was unable to encode a value."], null);
-}),null)),null,2144366868);
+}),null)),null,-132668851);
 } else {
 }
 
@@ -92,10 +92,10 @@ com.fulcrologic.fulcro.inspect.transit.write_handlers = (function com$fulcrologi
 return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentArrayMap.createAsIfByAssoc([cljs.core.ExceptionInfo,(new com.fulcrologic.fulcro.inspect.transit.ErrorHandler()),"default",(new com.fulcrologic.fulcro.inspect.transit.DefaultHandler())]),com.fulcrologic.fulcro.algorithms.transit.write_handlers()], 0));
 });
 com.fulcrologic.fulcro.inspect.transit.read_handlers = (function com$fulcrologic$fulcro$inspect$transit$read_handlers(){
-return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, ["js-error",(function (p__51883){
-var vec__51884 = p__51883;
-var msg = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__51884,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__51884,(1),null);
+return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, ["js-error",(function (p__53292){
+var vec__53293 = p__53292;
+var msg = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__53293,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__53293,(1),null);
 return cljs.core.ex_info.cljs$core$IFn$_invoke$arity$2(msg,data);
 })], null),com.fulcrologic.fulcro.algorithms.transit.read_handlers()], 0));
 });

@@ -19,11 +19,11 @@ return cljs.core.re_seq(/[#.]?[^#.]+/,cljs.core.name(k));
 com.fulcrologic.fulcro.dom_common.parse = (function com$fulcrologic$fulcro$dom_common$parse(k){
 if(cljs.core.truth_(k)){
 var tokens = com.fulcrologic.fulcro.dom_common.get_tokens(k);
-var id = cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62204_SHARP_){
-return cljs.core.re_matches(/^#.*/,p1__62204_SHARP_);
+var id = cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__60646_SHARP_){
+return cljs.core.re_matches(/^#.*/,p1__60646_SHARP_);
 }),tokens));
-var classes = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62205_SHARP_){
-return cljs.core.re_matches(/^\..*/,p1__62205_SHARP_);
+var classes = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__60647_SHARP_){
+return cljs.core.re_matches(/^\..*/,p1__60647_SHARP_);
 }),tokens);
 var sanitized_id = com.fulcrologic.fulcro.dom_common.remove_separators(id);
 if(cljs.core.truth_(cljs.core.re_matches(/^(\.[^.#]+|#[^.#]+)+$/,cljs.core.name(k)))){
@@ -31,11 +31,11 @@ if(cljs.core.truth_(cljs.core.re_matches(/^(\.[^.#]+|#[^.#]+)+$/,cljs.core.name(
 throw cljs.core.ex_info.cljs$core$IFn$_invoke$arity$2("Invalid style keyword. It contains something other than classnames and IDs.",new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"item","item",249373802),k], null));
 }
 
-var G__62215 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"classes","classes",2037804510),cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentVector.EMPTY,cljs.core.keep.cljs$core$IFn$_invoke$arity$2(com.fulcrologic.fulcro.dom_common.remove_separators,classes))], null);
+var G__60651 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"classes","classes",2037804510),cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentVector.EMPTY,cljs.core.keep.cljs$core$IFn$_invoke$arity$2(com.fulcrologic.fulcro.dom_common.remove_separators,classes))], null);
 if(cljs.core.truth_(sanitized_id)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__62215,new cljs.core.Keyword(null,"id","id",-1388402092),sanitized_id);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__60651,new cljs.core.Keyword(null,"id","id",-1388402092),sanitized_id);
 } else {
-return G__62215;
+return G__60651;
 }
 } else {
 return cljs.core.PersistentArrayMap.EMPTY;
@@ -53,10 +53,10 @@ return clojure.string.join.cljs$core$IFn$_invoke$arity$2(" ",((cljs.core.seq(cla
  * Combine a hiccup-style keyword with props that are either a JS or CLJS map.
  */
 com.fulcrologic.fulcro.dom_common.add_kwprops_to_props = (function com$fulcrologic$fulcro$dom_common$add_kwprops_to_props(props,kw){
-var map__62218 = com.fulcrologic.fulcro.dom_common.parse(kw);
-var map__62218__$1 = (((((!((map__62218 == null))))?(((((map__62218.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__62218.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__62218):map__62218);
-var classes = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__62218__$1,new cljs.core.Keyword(null,"classes","classes",2037804510),cljs.core.PersistentVector.EMPTY);
-var id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62218__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var map__60655 = com.fulcrologic.fulcro.dom_common.parse(kw);
+var map__60655__$1 = (((((!((map__60655 == null))))?(((((map__60655.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__60655.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__60655):map__60655);
+var classes = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__60655__$1,new cljs.core.Keyword(null,"classes","classes",2037804510),cljs.core.PersistentVector.EMPTY);
+var id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60655__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
 if((((props == null)) || (cljs.core.object_QMARK_(props)))){
 var props__$1 = goog.object.clone(props);
 var existing_classes = goog.object.get(props__$1,"className");
@@ -73,18 +73,18 @@ goog.object.set(props__$1,"id",id);
 return props__$1;
 } else {
 var existing_classes = new cljs.core.Keyword(null,"className","className",-1983287057).cljs$core$IFn$_invoke$arity$1(props);
-var G__62223 = (function (){var or__4126__auto__ = props;
+var G__60658 = (function (){var or__4126__auto__ = props;
 if(cljs.core.truth_(or__4126__auto__)){
 return or__4126__auto__;
 } else {
 return cljs.core.PersistentArrayMap.EMPTY;
 }
 })();
-var G__62223__$1 = ((cljs.core.seq(classes))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__62223,new cljs.core.Keyword(null,"className","className",-1983287057),com.fulcrologic.fulcro.dom_common.combined_classes(classes,existing_classes)):G__62223);
+var G__60658__$1 = ((cljs.core.seq(classes))?cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__60658,new cljs.core.Keyword(null,"className","className",-1983287057),com.fulcrologic.fulcro.dom_common.combined_classes(classes,existing_classes)):G__60658);
 if(cljs.core.truth_(id)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__62223__$1,new cljs.core.Keyword(null,"id","id",-1388402092),id);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__60658__$1,new cljs.core.Keyword(null,"id","id",-1388402092),id);
 } else {
-return G__62223__$1;
+return G__60658__$1;
 }
 }
 });

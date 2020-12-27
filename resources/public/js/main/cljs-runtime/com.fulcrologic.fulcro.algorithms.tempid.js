@@ -65,8 +65,8 @@ return (new com.fulcrologic.fulcro.algorithms.tempid.TempId(id,__hash));
  * Create a new tempid.
  */
 com.fulcrologic.fulcro.algorithms.tempid.tempid = (function com$fulcrologic$fulcro$algorithms$tempid$tempid(var_args){
-var G__50410 = arguments.length;
-switch (G__50410) {
+var G__50507 = arguments.length;
+switch (G__50507) {
 case 0:
 return com.fulcrologic.fulcro.algorithms.tempid.tempid.cljs$core$IFn$_invoke$arity$0();
 
@@ -134,11 +134,11 @@ return clojure.walk.prewalk_replace(tid__GT_rid,data_structure);
  *   guids).  It is unsafe to use this function if you're using something else for temporary IDs
  *   as this function might rewrite things that are not IDs.
  */
-com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids_BANG_ = (function com$fulcrologic$fulcro$algorithms$tempid$resolve_tempids_BANG_(p__50422,tx_result){
-var map__50423 = p__50422;
-var map__50423__$1 = (((((!((map__50423 == null))))?(((((map__50423.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__50423.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__50423):map__50423);
-var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50423__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","state-atom","com.fulcrologic.fulcro.application/state-atom",648128366));
-var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50423__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
+com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids_BANG_ = (function com$fulcrologic$fulcro$algorithms$tempid$resolve_tempids_BANG_(p__50528,tx_result){
+var map__50531 = p__50528;
+var map__50531__$1 = (((((!((map__50531 == null))))?(((((map__50531.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__50531.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__50531):map__50531);
+var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50531__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","state-atom","com.fulcrologic.fulcro.application/state-atom",648128366));
+var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50531__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
 var tid__GT_rid = com.fulcrologic.fulcro.algorithms.tempid.result__GT_tempid__GT_realid(tx_result);
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(state_atom,com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids,tid__GT_rid);
 
@@ -151,22 +151,22 @@ return cljs.core.update.cljs$core$IFn$_invoke$arity$4(cljs.core.update.cljs$core
  *   it generates a stable one based on that number (useful for testing). Works in cljc.
  */
 com.fulcrologic.fulcro.algorithms.tempid.uuid = (function com$fulcrologic$fulcro$algorithms$tempid$uuid(var_args){
-var G__50427 = arguments.length;
-switch (G__50427) {
+var G__50546 = arguments.length;
+switch (G__50546) {
 case 0:
 return com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$core$IFn$_invoke$arity$0();
 
 break;
 default:
 var args_arr__4757__auto__ = [];
-var len__4736__auto___50434 = arguments.length;
-var i__4737__auto___50435 = (0);
+var len__4736__auto___50572 = arguments.length;
+var i__4737__auto___50573 = (0);
 while(true){
-if((i__4737__auto___50435 < len__4736__auto___50434)){
-args_arr__4757__auto__.push((arguments[i__4737__auto___50435]));
+if((i__4737__auto___50573 < len__4736__auto___50572)){
+args_arr__4757__auto__.push((arguments[i__4737__auto___50573]));
 
-var G__50437 = (i__4737__auto___50435 + (1));
-i__4737__auto___50435 = G__50437;
+var G__50574 = (i__4737__auto___50573 + (1));
+i__4737__auto___50573 = G__50574;
 continue;
 } else {
 }
@@ -188,9 +188,9 @@ return cljs.core.uuid(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.st
 }));
 
 /** @this {Function} */
-(com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$applyTo = (function (seq50426){
+(com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$applyTo = (function (seq50544){
 var self__4724__auto__ = this;
-return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq50426));
+return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq50544));
 }));
 
 (com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$maxFixedArity = (0));
